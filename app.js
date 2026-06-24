@@ -1,9 +1,9 @@
 (function () {
   'use strict';
 
-  // ═══════════════════════════════════════════
-  //  DATA
-  // ═══════════════════════════════════════════
+
+
+
 
   var DATA = {
     es: {
@@ -278,17 +278,17 @@
     purple: { bg: 'rgba(245,243,255,0.7)', border: 'rgba(221,214,254,0.6)', text: '#5b21b6' }
   };
 
-  // ═══════════════════════════════════════════
-  //  STATE
-  // ═══════════════════════════════════════════
+
+
+
 
   var currentLang = 'es';
   var currentFilter = 'all';
   var selectedProject = null;
 
-  // ═══════════════════════════════════════════
-  //  HELPERS
-  // ═══════════════════════════════════════════
+
+
+
 
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
@@ -327,9 +327,9 @@
     });
   }
 
-  // ═══════════════════════════════════════════
-  //  MOBILE MENU
-  // ═══════════════════════════════════════════
+
+
+
 
   function closeMobileMenu() {
     $('#mobile-menu').classList.remove('open');
@@ -339,9 +339,9 @@
     if (closeIcon) closeIcon.style.display = 'none';
   }
 
-  // ═══════════════════════════════════════════
-  //  LANGUAGE
-  // ═══════════════════════════════════════════
+
+
+
 
   function setLanguage(lang) {
     currentLang = lang;
@@ -377,9 +377,9 @@
     initScrollReveal();
   }
 
-  // ═══════════════════════════════════════════
-  //  RENDER: HOME
-  // ═══════════════════════════════════════════
+
+
+
 
   function renderFocusCard(item, i) {
     var delay = i ? (' reveal reveal-delay-' + ((i % 8) + 1)) : ' reveal';
@@ -468,9 +468,9 @@
     lucide.createIcons();
   }
 
-  // ═══════════════════════════════════════════
-  //  RENDER: ABOUT
-  // ═══════════════════════════════════════════
+
+
+
 
   function renderAboutDynamic() {
     var lang = currentLang;
@@ -551,9 +551,9 @@
     $('#about-cta-contact').textContent = lang === 'es' ? 'Contactar' : 'Contact Me';
   }
 
-  // ═══════════════════════════════════════════
-  //  RENDER: PROJECTS PAGE
-  // ═══════════════════════════════════════════
+
+
+
 
   function renderProjectsPage() {
     var lang = currentLang;
@@ -594,9 +594,9 @@
     lucide.createIcons();
   }
 
-  // ═══════════════════════════════════════════
-  //  RENDER: CONTACT
-  // ═══════════════════════════════════════════
+
+
+
 
   function renderContactDynamic() {
     var lang = currentLang;
@@ -604,9 +604,9 @@
     $('#contact-label').textContent = lang === 'es' ? 'COMUNICACIÓN DIRECTA' : 'DIRECT PIPELINE';
   }
 
-  // ═══════════════════════════════════════════
-  //  RENDER: FOOTER DYNAMIC TEXT
-  // ═══════════════════════════════════════════
+
+
+
 
   function renderFooterDynamic() {
     var lang = currentLang;
@@ -615,9 +615,9 @@
     $('#back-to-top-text').textContent = lang === 'es' ? 'Volver Arriba' : 'Back to Top';
   }
 
-  // ═══════════════════════════════════════════
-  //  PROJECT DRAWER
-  // ═══════════════════════════════════════════
+
+
+
 
   function openDrawer(projectId) {
     var lang = currentLang;
@@ -678,9 +678,9 @@
     });
   }
 
-  // ═══════════════════════════════════════════
-  //  CONTACT FORM
-  // ═══════════════════════════════════════════
+
+
+
 
   function initContactForm() {
     var form = $('#contact-form');
@@ -780,9 +780,9 @@
     }
   }
 
-  // ═══════════════════════════════════════════
-  //  SCROLL REVEAL
-  // ═══════════════════════════════════════════
+
+
+
 
   var revealObserver = null;
 
@@ -803,9 +803,9 @@
     });
   }
 
-  // ═══════════════════════════════════════════
-  //  EVENT BINDINGS
-  // ═══════════════════════════════════════════
+
+
+
 
   function bindEvents() {
     $('#menu-toggle').addEventListener('click', function () {
@@ -855,9 +855,9 @@
     initContactForm();
   }
 
-  // ═══════════════════════════════════════════
-  //  INIT
-  // ═══════════════════════════════════════════
+
+
+
 
   function init() {
     $('#current-year').textContent = new Date().getFullYear();
