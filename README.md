@@ -1,6 +1,6 @@
 # Samuel Figueroa Portfolio
 
-🌐 Live Website: [YOUR_PORTFOLIO_URL](https://samfig.netlify.app/)
+🌐 Live Website: [SamFig-Page](https://samfig.netlify.app/)
 
 Personal portfolio website showcasing my projects, skills, and software development journey.
 
@@ -81,7 +81,7 @@ GitHub: https://github.com/RiftAxor
 
 Instagram: @samfig.p
 
-Portfolio: [YOUR_PORTFOLIO_URL](https://samfig.netlify.app/)
+Portfolio: [SamFig-Page](https://samfig.netlify.app/)
 
 ---
 
